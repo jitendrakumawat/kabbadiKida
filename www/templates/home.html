@@ -1,0 +1,40 @@
+<ion-view class="home" hide-nav-bar="true" hide-back-butto="true" cache-view="false" style="background-image: url('../img/home.png');">
+ <ion-content class="content-stable" padding="true">
+    <div id="Home">
+      <div>
+        <div class="has-header">
+        </div>
+        <div class="logoSpacerHeight">
+        </div>
+        <div >
+          <img class="full-image" src="../img/yuvayugaicon.png">
+        </div>
+      </div>
+    </div>
+ 	<div class="loginContent">
+ 	 <form name="loginForm" ng-submit="loginCtrl.login()">
+ 	   <div class="list" style="margin-bottom: 0px;">
+          <label class="item item-input" ng-class="{'has-errors':loginForm.username.$invalid && !loginForm.username.$prestine, 'no-errors : loginForm.username.$valid'}">
+            <i class="icon ion-ios-person-outline placeholder-icon"></i>
+            <input  validate  type="text" placeholder="Username" name="username" ng-model="loginCtrl.user.username" required="required">
+          </label>
+           <label class="item item-input">
+            <i class="icon ion-ios-locked-outline placeholder-icon"></i>
+            <input type="password" placeholder="password" name="password" ng-model="loginCtrl.user.password" required="required" validate>
+          </label >
+        </div>
+        </form>
+        <button class="button button-full  button-medium button-assertive">
+             login
+        </button>
+        <div class="margin-bottom-10">
+           <div class="text-center">
+              <h4 class="orContent">or</h4>
+              <a href=""><h4 class="RegisterContent">Register as a New Student</h4></a> 
+          	</div>
+        </div>
+        
+ 	</div>
+ </ion-content>
+	
+</ion-view>

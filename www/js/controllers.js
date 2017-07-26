@@ -1,5 +1,6 @@
 angular.module('starter.controllers', [])
 
+
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
 
   // With the new view caching in Ionic, Controllers are only called
@@ -8,6 +9,10 @@ angular.module('starter.controllers', [])
   // listen for the $ionicView.enter event:
   //$scope.$on('$ionicView.enter', function(e) {
   //});
+  if(loginForm.username.required || loginForm.username.$dirty){
+    loginForm.username.$touched=false;
+    return;
+  }
 
   // Form data for the login modal
   $scope.loginData = {};
@@ -54,3 +59,4 @@ angular.module('starter.controllers', [])
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
 });
+

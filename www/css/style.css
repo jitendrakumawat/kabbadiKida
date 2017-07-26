@@ -1,1 +1,22 @@
 /* Empty. Add your own CSS if you like */
+.loginContent{
+	margin-top: 30%;
+	background-color: #fff;
+	border-top:5px solid #f47442;
+	border-bottom:5px solid #f47442;
+}
+.button-medium {
+	
+	margin-top: 0px;
+    color: #fff;
+}
+.RegisterContent{
+	color: #ff8658;
+  text-decoration: underline;
+  font-size: 18px;
+}
+.margin-bottom-10{
+	padding-top: 10px;
+	margin-bottom: 50px;
+
+}
